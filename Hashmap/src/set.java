@@ -12,10 +12,10 @@ public class set {
         ArrayList<Character> aa = new ArrayList<Character>(s);
         Collections.sort(aa);
         System.out.println(aa);
-        Iterator hh = aa.iterator();
-        while (hh.hasNext()) {
-            System.out.println(hh.next());
-        }
+        // Iterator hh = aa.iterator();
+        // while (hh.hasNext()) {
+        // System.out.println(hh.next());
+        // }
     }
 
 }

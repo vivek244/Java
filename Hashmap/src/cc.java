@@ -33,10 +33,10 @@ public class cc {
         // res.add(bigger.get(0));
         // res.add(bigger.get(n - 1));
         // return res;
-        int N = arr.length;
+        // int N = arr.length;
         ArrayList<Integer> res = new ArrayList<>();
         int mx = 0;
-        int count = 0;
+        // int count = 0;
         HashSet<Integer> set = new HashSet<>();
 
         for (Integer element : arr) {
