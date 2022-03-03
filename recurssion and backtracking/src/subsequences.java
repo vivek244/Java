@@ -3,7 +3,8 @@ import java.util.List;
 
 public class subsequences {
 
-    static void helper(List<List<Integer>> list, List<Integer> temp, int arr[], int s) {
+    static void helper(List<List<Integer>> list, List<Integer> temp, int arr[],
+            int s) {
         list.add(new ArrayList<>(temp));
         for (int i = s; i < arr.length; i++) {
             temp.add(arr[i]);
@@ -32,6 +33,9 @@ public class subsequences {
         int l = sub(arr, sum, temp + 1, s);
         s -= arr[temp];
         int r = sub(arr, sum, temp + 1, s);
+        System.out.print(l + " ");
+        System.out.print(r + " ");
+        System.out.println();
         return l + r;
     }
 
@@ -44,8 +48,8 @@ public class subsequences {
             }
             System.out.println();
         }
-        int nums[] = { 10, 20, 30, 40, 50 };
-        int sum = 100;
+        int nums[] = { 10, 20, 30, 40 };
+        int sum = 60;
         System.out.println(sub(nums, sum, 0, 0));
     }
 
