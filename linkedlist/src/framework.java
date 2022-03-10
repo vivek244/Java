@@ -14,6 +14,20 @@ public class framework {
         }
     }
 
+    static Node solve(Node ll) {
+        if (ll == null || ll.next == null) {
+            return ll;
+        }
+        Node curr = ll, prev = null, next = null;
+        while (curr != null) {
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        return prev;
+    }
+
     public static void main(String[] args) {
         // framework list=new framework();
         LinkedList<Integer> ss = new LinkedList<>();
@@ -22,10 +36,12 @@ public class framework {
         ss.addFirst(15);
         ss.addLast(70);
         ss.addFirst(20);
-        System.out.println(ss.peekFirst());
-        ss.poll();
-        System.out.println(ss.poll());
-        System.out.println(ss.peekLast());
+        // Node he = solve(ss.next);
+
+        // System.out.println(ss.peekFirst());
+        // ss.poll();
+        // System.out.println(ss.poll());
+        // System.out.println(ss.peekLast());
 
     }
 

@@ -22,15 +22,14 @@ class Car {
     private int speed;
 
     public Car() {
-        void print(){
-    System.out.print("This Is Car ");
-    }}
+        System.out.print("This Is Car ");
+    }
 }
 
 class Audi extends Car {
     Audi() {
         System.out.print("This Is Audi ");
-        super();
+        // super();
     }
 }
 
